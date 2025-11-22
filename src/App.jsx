@@ -160,9 +160,6 @@ const AITutor = ({ type, data }) => {
 
   return (
     <>
-      <Button onClick={() => { setIsOpen(true); generateContent('explain'); }} variant="ai">
-        <Sparkles size={16} /> <span className="hidden sm:inline">AI Tutor</span><span className="sm:hidden">AI</span>
-      </Button>
 
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-200">
